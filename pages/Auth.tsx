@@ -42,7 +42,7 @@ export default function AuthPage() {
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-secondary">
             <Thermometer className="h-7 w-7 text-foreground" />
           </div>
-          <CardTitle className="font-serif text-2xl">Temperaturloggen</CardTitle>
+          <CardTitle className="font-serif text-2xl">Håll koll på Tempen</CardTitle>
           <CardDescription>
             {isLogin ? "Logga in för att registrera temperaturer" : "Skapa ett konto"}
           </CardDescription>

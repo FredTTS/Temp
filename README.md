@@ -1,4 +1,4 @@
-# Temperaturloggen
+# Håll koll på Tempen
 
 En körbar webbapp för att logga temperaturer i 8 rum. Byggd med React, Vite, TypeScript, Supabase och shadcn/ui.
 
@@ -26,6 +26,19 @@ En körbar webbapp för att logga temperaturer i 8 rum. Byggd med React, Vite, T
    Öppna sedan http://localhost:8080 i webbläsaren.
 
 5. **Logga in / skapa konto** på `/auth`, sedan **Dashboard** på `/dashboard` för att logga temperaturer och se statistik.
+
+## Publicera på GitHub Pages (t.ex. https://fredtts.github.io/Temp/)
+
+1. **Bygg för GitHub Pages** (sätter bas-sökväg och skapar 404 för SPA):
+   ```sh
+   npm run build:gh-pages
+   ```
+
+2. **Publicera**  
+   Publicera innehållet i mappen `dist` till repots `gh-pages`-branch eller till mappen som GitHub Pages använder (t.ex. en mapp `Temp` om sidan ska ligga under `/Temp/`).
+
+3. **Supabase**  
+   Lägg till webbadressen där appen ligger (t.ex. `https://fredtts.github.io/Temp/`) under **Authentication → URL Configuration → Redirect URLs** i Supabase så att inloggning fungerar.
 
 ## Project info (Lovable)
 

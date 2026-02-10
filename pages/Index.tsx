@@ -8,7 +8,7 @@ const Index = () => {
     <div className="flex min-h-screen flex-col items-center justify-center gap-6 bg-background p-4">
       <div className="flex items-center gap-3">
         <Thermometer className="h-10 w-10 text-primary" />
-        <h1 className="font-serif text-3xl font-bold">Temperaturloggen</h1>
+        <h1 className="font-serif text-3xl font-bold">Håll koll på Tempen</h1>
       </div>
       <p className="max-w-md text-center text-muted-foreground">
         Logga och följ temperaturer i dina rum. Fungerar i webbläsaren – du kan även installera appen om du vill.

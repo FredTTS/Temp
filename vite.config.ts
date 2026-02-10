@@ -26,8 +26,8 @@ export default defineConfig(({ mode }) => ({
         navigateFallbackDenylist: [/^\/~oauth/],
       },
       manifest: {
-        name: "Temperaturloggen",
-        short_name: "TempLogg",
+        name: "Håll koll på Tempen",
+        short_name: "Tempen",
         description: "Logga och följ temperaturer i 8 rum",
         theme_color: "#2d3748",
         background_color: "#f7f5f2",

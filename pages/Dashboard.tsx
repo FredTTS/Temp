@@ -24,7 +24,7 @@ export default function Dashboard() {
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
             <Thermometer className="h-6 w-6 text-foreground" />
-            <h1 className="font-serif text-xl font-semibold">Temperaturloggen</h1>
+            <h1 className="font-serif text-xl font-semibold">Håll koll på Tempen</h1>
           </div>
           <div className="flex items-center gap-2 sm:gap-4">
             <InstallAppButton variant="ghost" size="sm" showLabel={false} />

@@ -43,7 +43,7 @@ export function InstallAppButton({
           </Button>
         </TooltipTrigger>
         <TooltipContent>
-          <p>Lägg till Temperaturloggen på enheten och öppna som app</p>
+          <p>Lägg till Håll koll på Tempen på enheten och öppna som app</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
