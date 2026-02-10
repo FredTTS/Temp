@@ -1,6 +1,33 @@
-# Welcome to your Lovable project
+# Temperaturloggen
 
-## Project info
+En körbar webbapp för att logga temperaturer i 8 rum. Byggd med React, Vite, TypeScript, Supabase och shadcn/ui.
+
+## Kör appen
+
+1. **Installera beroenden**
+   ```sh
+   npm i
+   ```
+
+2. **Miljövariabler**  
+   Filen `.env` ska finnas i projektroten med:
+   - `VITE_SUPABASE_URL` – din Supabase-projekt-URL
+   - `VITE_SUPABASE_PUBLISHABLE_KEY` – din Supabase anon-nyckel  
+
+   (Du kan kopiera från `env.txt` till `.env` om du redan har värden där.)
+
+3. **Supabase-tabell**  
+   I Supabase (SQL Editor) kan du köra migreringen i `supabase/migrations/20250210000000_create_temperature_logs.sql` så att tabellen `temperature_logs` och RLS skapas.
+
+4. **Starta utvecklingsservern**
+   ```sh
+   npm run dev
+   ```
+   Öppna sedan http://localhost:8080 i webbläsaren.
+
+5. **Logga in / skapa konto** på `/auth`, sedan **Dashboard** på `/dashboard` för att logga temperaturer och se statistik.
+
+## Project info (Lovable)
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
