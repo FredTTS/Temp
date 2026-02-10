@@ -51,10 +51,12 @@ function AppRoutes() {
   );
 }
 
+const basename = (import.meta.env.BASE_URL || "/").replace(/\/$/, "") || "/";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <AuthProvider>
           <AppRoutes />
           <Toaster position="top-center" richColors />
