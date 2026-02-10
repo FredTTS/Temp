@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchCurrentWeather } from "@/lib/weather";
 import RoomGrid from "@/components/RoomGrid";
 import Statistics from "@/components/Statistics";
+import { InstallAppButton } from "@/components/InstallAppButton";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { LogOut, Thermometer, CloudSun } from "lucide-react";
@@ -25,7 +26,8 @@ export default function Dashboard() {
             <Thermometer className="h-6 w-6 text-foreground" />
             <h1 className="font-serif text-xl font-semibold">Temperaturloggen</h1>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
+            <InstallAppButton variant="ghost" size="sm" showLabel={false} />
             {weather && (
               <div className="hidden items-center gap-2 text-sm text-muted-foreground sm:flex">
                 <CloudSun className="h-4 w-4" />

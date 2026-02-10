@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { InstallAppButton } from "@/components/InstallAppButton";
 import { Thermometer } from "lucide-react";
 
 const Index = () => {
@@ -10,11 +11,14 @@ const Index = () => {
         <h1 className="font-serif text-3xl font-bold">Temperaturloggen</h1>
       </div>
       <p className="max-w-md text-center text-muted-foreground">
-        Logga och följ temperaturer i dina rum. Logga in för att komma igång.
+        Logga och följ temperaturer i dina rum. Fungerar i webbläsaren – du kan även installera appen om du vill.
       </p>
-      <Button asChild size="lg">
-        <Link to="/auth">Logga in</Link>
-      </Button>
+      <div className="flex flex-wrap items-center justify-center gap-3">
+        <Button asChild size="lg">
+          <Link to="/auth">Logga in</Link>
+        </Button>
+        <InstallAppButton variant="outline" size="lg" className="shrink-0" />
+      </div>
     </div>
   );
 };
